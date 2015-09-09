@@ -22,12 +22,12 @@ http://neo4j.com/download/
 ### Install neo4j driver globally
 If you haven’t already got Node.js installed, you will need to [install it first](https://nodejs.org/), so that you can use npm, for this next step.
 
-$ su admin # or whatever your admin account is called
-$ sudo npm -g install neo4j
+    $ su admin # or whatever your admin account is called
+    $ sudo npm -g install neo4j
 
 ## Running the demo
-$ cd /path/to/neo4jDemo/
-$ meteor run
+    $ cd /path/to/neo4jDemo/
+    $ meteor run
 
 **Note: If you have placed Neo4j in a different location, or if you have used a different password, you can copy the initNeo4j.sh file to a new folder, cd into that folder, then run:**
 
