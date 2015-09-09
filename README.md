@@ -1,6 +1,8 @@
 # neo4jDemo
 Hello-->World demo, using Meteor and Neo4j
 
+See [an online demo](http://neo4jdemo.meteor.com/), with the database hosted at [http://www.graphenedb.com/](http://www.graphenedb.com/).
+
 ## Set up
 Here are the steps to get this demo working an a clean install of Mac OS 10.10 Yosemite or Ubuntu 15.04.
 You will need to install:
