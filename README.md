@@ -113,6 +113,7 @@ The demo creates two Neo4j nodes, with the names "Hello" and "World", and two li
     RETURN a
     
 Here's what this looks like in the Neo4j browser:
+
 ![Neo4j Browser View](https://github.com/lexogram/Meteo4j/blob/gh-pages/img/HelloWorld.png)
 
 When you click on the button, Meteor will use Neo4j will follow the link to the next node in the sequence and display its name.
