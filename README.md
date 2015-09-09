@@ -1,8 +1,6 @@
 # neo4jDemo
 Hello-->World demo, using Meteor and Neo4j
 
-![Demo Maze](http://lexogram.github.io/Meteo4j/img/map.png)
-
 ## Set up
 Here are the steps to get this demo working an a clean install of Mac OS 10.10 Yosemite or Ubuntu 15.04.
 You will need to install:
@@ -115,6 +113,6 @@ The demo creates two Neo4j nodes, with the names "Hello" and "World", and two li
     RETURN a
     
 Here's what this looks like in the Neo4j browser:
-image::http://lexogram.github.io/Meteo4j/img/helloWorld.png?raw=true[Neo4j Browser View]
+![Neo4j Browser View]http://lexogram.github.io/Meteo4j/img/helloWorld.png)
 
 When you click on the button, Meteor will use Neo4j will follow the link to the next node in the sequence and display its name.
