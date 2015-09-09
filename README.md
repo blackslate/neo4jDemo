@@ -111,5 +111,8 @@ The demo creates two Neo4j nodes, with the names "Hello" and "World", and two li
       (a:Node {name:'Hello'})-[:LINK]->(b:Node {name:'World'})
     , b-[:LINK]->a
     RETURN a
+    
+Here's what this looks like in the Neo4j browser:
+image::http://lexogram.github.io/Meteo4j/img/helloWorld.png?raw=true[Neo4j Browser View]
 
 When you click on the button, Meteor will use Neo4j will follow the link to the next node in the sequence and display its name.
