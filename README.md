@@ -12,7 +12,7 @@ http://neo4j.com/download/
 - Decompress the files
 - Move the `neo4j` director to where you want it. I'll assume that you have moved it to here:
 
-    $ cd ~/neo4j
+    ~/neo4j
 
 - On Mac OS 10.10 Yosemite, you might need to [install Java](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) before Neo4j will run.
 - Launch Neo4j to test that it is working
@@ -36,5 +36,13 @@ If you haven’t already got Node.js installed, you will need to [install it fir
 **You will be asked what you want to name your demo, where Neo4j is installed and what its password is.**
 
 ## Result
-You should see a big button that says [ Hello ]. If you click on it, it should say [ World ]
+You should see a big button that says [ Hello ]. If you click on it, it should say [ World ].
 
+The demo creates two Neo4j nodes, with the names "Hello" and "World", and two links between them, creating a looped sequence. Here's the Cypher query:
+
+    CREATE
+      (a:Node {name:'Hello'})-[:LINK]->(b:Node {name:'World'})
+    , b-[:LINK]->a
+    RETURN a
+
+When you click on the button, Meteor will use Neo4j will follow the link to the next node in the sequence and display its name.
