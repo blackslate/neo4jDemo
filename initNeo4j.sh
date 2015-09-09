@@ -1,4 +1,4 @@
-# NOTES: 
+## NOTES: 
 # Script doesn't halt if an app with the given name already exists.
 # Script doesn't offer alternative ports for Meteor and MongoDB
 
