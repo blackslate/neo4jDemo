@@ -33,7 +33,7 @@ $ meteor run
 
     $ ./initNeo4j.sh
     
-**You will be asked what you want to name your demo, where Neo4j is installed and what its password is.
+**You will be asked what you want to name your demo, where Neo4j is installed and what its password is.**
 
 ## Result
 You should see a big button that says [ Hello ]. If you click on it, it should say [ World ]
