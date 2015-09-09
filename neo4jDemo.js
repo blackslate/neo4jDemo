@@ -15,7 +15,7 @@ var create =
   "RETURN a"
 var click = 
   "MATCH (a:Node)-->(b:Node) " +
-  "WHERE a.name = {name} " +
+  "WHERE a.name =~ {name} " +
   "RETURN b"
 
 
@@ -24,7 +24,7 @@ if (Meteor.isClient) {
 
   Tracker.autorun(function (){
     // key = "button" (identifies the publish/subscription channel)
-    var options = {name: Session.get("name")} // {} with  key
+    var options = {name: "(?i)"+Session.get("name")} // {} with  key
     var link = "b" // same as the key for the RETURNed value
     var subscription = helloWorld.subscribe(key, options, link)
   })
@@ -41,7 +41,7 @@ if (Meteor.isClient) {
       var cursor = helloWorld.find() //  LocalCollection.Cursor
       var result = cursor.fetch() // array of node objects
       var node = result[0] || {}// first object in array
-      var name = node.name || "Not found"
+      var name = node.name || "world" // lowercase = not found
       Session.set("name", name);
     }
   })
