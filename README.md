@@ -1,6 +1,8 @@
 # neo4jDemo
 Hello-->World demo, using Meteor and Neo4j
 
+image::http://lexogram.github.io/Meteo4j/img/map.png?raw=true[Demo Maze]
+
 ## Set up
 Here are the steps to get this demo working an a clean install of Mac OS 10.10 Yosemite or Ubuntu 15.04.
 You will need to install:
